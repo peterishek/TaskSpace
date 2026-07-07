@@ -1,4 +1,3 @@
-
 # TaskSpace — Task Manager
 
 A full-stack task management app: Django REST Framework backend with JWT auth,
@@ -24,7 +23,8 @@ React + TypeScript frontend.
 ### Backend
 
 ```bash
-pip install django djangorestframework djangorestframework-simplejwt
+pip install django djangorestframework djangorestframework-simplejwt 
+or pip freeze then pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
@@ -33,12 +33,12 @@ python manage.py runserver
 ### Frontend
 
 ```bash
-cd frontend
+cd react
 npm install
 npm run dev
 ```
 
-By default the frontend expects the API at `http://127.0.0.1:8000/api/` (see `src/api.ts`).
+By default the frontend expects the API at `http://127.0.0.1:8000/api/ but this is http://127.0.0.1:9000/api/` (see `src/api.ts`).
 
 ---
 
